@@ -1,0 +1,16 @@
+#myGrid {
+    width: auto;
+    height: 50%;
+}
+
+@media (max-width: 768px) {
+    .gjs-row {
+        flex-wrap: wrap;
+    }
+}
+#template-i0q2v {
+    padding-top: 50px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 10px;
+}

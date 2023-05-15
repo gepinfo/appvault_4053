@@ -1,0 +1,266 @@
+---
+openapi: 3.0.0
+info:
+   version: 1.3.0
+   title: connectorid open api specification
+   description: idconnectpath API
+   termsOfService: http://api_url/terms/
+   contact:
+      name: ContactName
+      email: hello@wolox.co
+      url: https://www.wolox.com.ar/
+   license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+   - url: http://localhost:8011
+     description: idconnectpath
+tags:
+- name: attributes
+  description: attributes
+- name: testsaleforcepathapi
+  description: testsaleforcepathapi
+paths:
+   "/testsaleforcepathapi/get/search":
+      get:
+         tags:
+         -  testsaleforcepathapi
+         description: GpSearch
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/testsaleforcepathapi/userid/created_by":
+      get:
+         tags:
+         -  testsaleforcepathapi
+         description: GpGetNounCreatedBy
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+components:
+   schemas:
+      attributes:
+         type: object
+         properties:
+            type:
+               type: "string"
+               description: type
+            url:
+               type: "string"
+               description: url
+      testsaleforcepathapi:
+         type: object
+         properties:
+            attributes:
+               type: "string"
+               description: attributes
+            Id:
+               type: "string"
+               description: Id
+            IsDeleted:
+               type: "string"
+               description: IsDeleted
+            MasterRecordId:
+               type: "string"
+               description: MasterRecordId
+            Name:
+               type: "string"
+               description: Name
+            Type:
+               type: "string"
+               description: Type
+            ParentId:
+               type: "string"
+               description: ParentId
+            BillingStreet:
+               type: "string"
+               description: BillingStreet
+            BillingCity:
+               type: "string"
+               description: BillingCity
+            BillingState:
+               type: "string"
+               description: BillingState
+            BillingPostalCode:
+               type: "string"
+               description: BillingPostalCode
+            BillingCountry:
+               type: "string"
+               description: BillingCountry
+            BillingLatitude:
+               type: "string"
+               description: BillingLatitude
+            BillingLongitude:
+               type: "string"
+               description: BillingLongitude
+            BillingGeocodeAccuracy:
+               type: "string"
+               description: BillingGeocodeAccuracy
+            BillingAddress:
+               type: "string"
+               description: BillingAddress
+            ShippingStreet:
+               type: "string"
+               description: ShippingStreet
+            ShippingCity:
+               type: "string"
+               description: ShippingCity
+            ShippingState:
+               type: "string"
+               description: ShippingState
+            ShippingPostalCode:
+               type: "string"
+               description: ShippingPostalCode
+            ShippingCountry:
+               type: "string"
+               description: ShippingCountry
+            ShippingLatitude:
+               type: "string"
+               description: ShippingLatitude
+            ShippingLongitude:
+               type: "string"
+               description: ShippingLongitude
+            ShippingGeocodeAccuracy:
+               type: "string"
+               description: ShippingGeocodeAccuracy
+            ShippingAddress:
+               type: "string"
+               description: ShippingAddress
+            Phone:
+               type: "string"
+               description: Phone
+            Fax:
+               type: "string"
+               description: Fax
+            AccountNumber:
+               type: "string"
+               description: AccountNumber
+            Website:
+               type: "string"
+               description: Website
+            PhotoUrl:
+               type: "string"
+               description: PhotoUrl
+            Sic:
+               type: "string"
+               description: Sic
+            Industry:
+               type: "string"
+               description: Industry
+            AnnualRevenue:
+               type: "string"
+               description: AnnualRevenue
+            NumberOfEmployees:
+               type: "string"
+               description: NumberOfEmployees
+            Ownership:
+               type: "string"
+               description: Ownership
+            TickerSymbol:
+               type: "string"
+               description: TickerSymbol
+            Description:
+               type: "string"
+               description: Description
+            Rating:
+               type: "string"
+               description: Rating
+            Site:
+               type: "string"
+               description: Site
+            OwnerId:
+               type: "string"
+               description: OwnerId
+            CreatedDate:
+               type: "string"
+               description: CreatedDate
+            CreatedById:
+               type: "string"
+               description: CreatedById
+            LastModifiedDate:
+               type: "string"
+               description: LastModifiedDate
+            LastModifiedById:
+               type: "string"
+               description: LastModifiedById
+            SystemModstamp:
+               type: "string"
+               description: SystemModstamp
+            LastActivityDate:
+               type: "string"
+               description: LastActivityDate
+            LastViewedDate:
+               type: "string"
+               description: LastViewedDate
+            LastReferencedDate:
+               type: "string"
+               description: LastReferencedDate
+            Jigsaw:
+               type: "string"
+               description: Jigsaw
+            JigsawCompanyId:
+               type: "string"
+               description: JigsawCompanyId
+            CleanStatus:
+               type: "string"
+               description: CleanStatus
+            AccountSource:
+               type: "string"
+               description: AccountSource
+            DunsNumber:
+               type: "string"
+               description: DunsNumber
+            Tradestyle:
+               type: "string"
+               description: Tradestyle
+            NaicsCode:
+               type: "string"
+               description: NaicsCode
+            NaicsDesc:
+               type: "string"
+               description: NaicsDesc
+            YearStarted:
+               type: "string"
+               description: YearStarted
+            SicDesc:
+               type: "string"
+               description: SicDesc
+            DandbCompanyId:
+               type: "string"
+               description: DandbCompanyId
+            OperatingHoursId:
+               type: "string"
+               description: OperatingHoursId
+            CustomerPriority__c:
+               type: "string"
+               description: CustomerPriority__c
+            SLA__c:
+               type: "string"
+               description: SLA__c
+            Active__c:
+               type: "string"
+               description: Active__c
+            NumberofLocations__c:
+               type: "string"
+               description: NumberofLocations__c
+            UpsellOpportunity__c:
+               type: "string"
+               description: UpsellOpportunity__c
+            SLASerialNumber__c:
+               type: "string"
+               description: SLASerialNumber__c
+            SLAExpirationDate__c:
+               type: "string"
+               description: SLAExpirationDate__c

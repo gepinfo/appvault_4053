@@ -1,0 +1,393 @@
+
+<div id="template-i90n" class="gjs-row">
+    <div id="template-i7ff" class="gjs-cell">
+        <div id="template-ifd1o" class="">Update Account</div>
+        <div id="template-ib56" class="gjs-row">
+            <div id="template-i2zi" class="gjs-cell">
+                <div id="template-ixbg" class="">Account Information</div>
+            </div>
+            <div id="template-i086" class="gjs-cell">
+                <div id="template-is3t" class="gjs-row">
+                    <div id="template-i3te" class="gjs-cell">
+                        <!-- <div id="template-izw1t" class="gjs-row">
+                            <div id="template-ioufd" class="gjs-cell">
+                                <div id="template-ilaxoy" class="">Account Owner</div>
+                            </div>
+                            <div id="template-inlc6" class="gjs-cell">
+                                <input id="template-iy5mv" class="input form-control" />
+                            </div>
+                        </div> -->
+                        <div id="template-ioqcs" class="gjs-row">
+                            <div id="template-ifirw" class="gjs-cell">
+                                <div id="template-irvc9x" class="">Account Name</div>
+                            </div>
+                            <div id="template-ijj4k" class="gjs-cell">
+                                <input id="template-i8uv4" class="input form-control"  ngDefaultControl [(ngModel)]="salesAccountUpdate.Name" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-i9jub" class="gjs-row">
+                            <div id="template-idf9s" class="gjs-cell">
+                                <div id="template-iomc9i" class="">Parent Account </div>
+                            </div>
+                            <div id="template-i4x1h" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" placeholder="select to create with relationship data" [(ngModel)]="salesAccountUpdate.ParentId" [ngModelOptions]="{standalone: true}" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let list of itemlist" [ngValue]="list.Id"  ngDefaultControl>{{list.Name}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="template-ifdwd" class="gjs-row">
+                            <div id="template-iwhnj" class="gjs-cell">
+                                <div id="template-ifeyi2" class="">Account Number</div>
+                            </div>
+                            <div id="template-i1fwj" class="gjs-cell">
+                                <input id="template-ilpv4" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.AccountNumber" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-itrdx" class="gjs-row">
+                            <div id="template-ixc1c" class="gjs-cell">
+                                <div id="template-iytx8f" class="">Account Site</div>
+                            </div>
+                            <div id="template-i7mpk" class="gjs-cell">
+                                <input id="template-igyua" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.Site" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-ibfyl" class="gjs-row">
+                            <div id="template-iy8dt" class="gjs-cell">
+                                <div id="template-igk8wg" class="">Type</div>
+                            </div>
+                            <div id="template-ipall" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control"  [(ngModel)]="salesAccountUpdate.Type" [ngModelOptions]="{standalone: true}" name="name" placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let tp of type" [ngValue]="tp" ngDefaultControl>{{tp}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="template-i5dep" class="gjs-row">
+                            <div id="template-i5wek" class="gjs-cell">
+                                <div id="template-il0lko" class="">Industry</div>
+                            </div>
+                            <div id="template-ixl2c" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" [(ngModel)]="salesAccountUpdate.Industry" [ngModelOptions]="{standalone: true}" placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let indus of industry" [ngValue]="indus"  ngDefaultControl>{{indus}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="template-ifmyp" class="gjs-row">
+                            <div id="template-ifag7" class="gjs-cell">
+                                <div id="template-i1d0w2" class="">Annual Revenue</div>
+                            </div>
+                            <div id="template-izdnz" class="gjs-cell">
+                                <input id="template-id9jx" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.AnnualRevenue" [ngModelOptions]="{standalone: true}" />
+                            </div>
+                        </div>
+                        <div id="template-is5rh" class="gjs-row">
+                            <div id="template-i1f3y" class="gjs-cell"></div>
+                            <div id="template-inplk" class="gjs-cell"></div>
+                        </div>
+                        <div id="template-it6lh" class="gjs-row">
+                            <div id="template-i37yh" class="gjs-cell"></div>
+                            <div id="template-i2osi" class="gjs-cell"></div>
+                        </div>
+                        <div id="template-ihy4y" class="gjs-row">
+                            <div id="template-ihufy" class="gjs-cell"></div>
+                            <div id="template-ixbm9" class="gjs-cell"></div>
+                        </div>
+                    </div>
+                    <div id="template-ikxb8k" class="gjs-cell">
+                        <div id="template-ihcsqp" class="gjs-row">
+                            <div id="template-ijbf0i" class="gjs-cell">
+                                <div id="template-ip2p2p" class="">Rating</div>
+                            </div>
+                            <div id="template-ill1ob" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" [(ngModel)]="salesAccountUpdate.Rating" [ngModelOptions]="{standalone: true}" placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let rate of rating" [ngValue]="rate"  ngDefaultControl>{{rate}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="template-i94rky" class="gjs-row">
+                            <div id="template-iwcipv" class="gjs-cell">
+                                <div id="template-i61xfh" class="">Phone</div>
+                            </div>
+                            <div id="template-is02sr" class="gjs-cell">
+                                <input id="template-i0sc8f" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.Phone" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-ixiang" class="gjs-row">
+                            <div id="template-ic74t9" class="gjs-cell">
+                                <div id="template-il8qyd" class="">Fax</div>
+                            </div>
+                            <div id="template-icwnvc" class="gjs-cell">
+                                <input id="template-irxdx8" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.Fax" [ngModelOptions]="{standalone: true}" />
+                            </div>
+                        </div>
+                        <div id="template-ijlmyg" class="gjs-row">
+                            <div id="template-i70hld" class="gjs-cell">
+                                <div id="template-ibsai6" class="">Website</div>
+                            </div>
+                            <div id="template-i1evbf" class="gjs-cell">
+                                <input id="template-ialfx6" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.Website" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-i3l9xv" class="gjs-row">
+                            <div id="template-i6hsdf" class="gjs-cell">
+                                <div id="template-ibo1cs" class="">Ticket Symbol</div>
+                            </div>
+                            <div id="template-irm8cz" class="gjs-cell">
+                                <input id="template-iaiixr" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.TickerSymbol" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-ibop14" class="gjs-row">
+                            <div id="template-itjskw" class="gjs-cell">
+                                <div id="template-i0fhbk" class="">OwnerShip</div>
+                            </div>
+                            <div id="template-iy4uth" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" [(ngModel)]="salesAccountUpdate.Ownership" [ngModelOptions]="{standalone: true}" placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let owner of ownership" [ngValue]="owner"  ngDefaultControl>{{owner}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="template-i0zlwv" class="gjs-row">
+                            <div id="template-is44bh" class="gjs-cell">
+                                <div id="template-iajq1k" class="">Employees</div>
+                            </div>
+                            <div id="template-ijx619" class="gjs-cell">
+                                <input id="template-ie82rz" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.NumberOfEmployees" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-ij7dm" class="gjs-row">
+                            <div id="template-ierwk" class="gjs-cell">
+                                <div id="template-i8zb3" class="">SIC Code</div>
+                            </div>
+                            <div id="template-i0p3x" class="gjs-cell">
+                                <input id="template-inxzv2" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.Sic" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-i0m5km" class="gjs-row">
+                            <div id="template-i4ooe2" class="gjs-cell"></div>
+                            <div id="template-iznx8z" class="gjs-cell"></div>
+                        </div>
+                        <div id="template-i6rt6f" class="gjs-row">
+                            <div id="template-ing3l7" class="gjs-cell"></div>
+                            <div id="template-i5ff9i" class="gjs-cell"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="template-iuob0r" class="gjs-row">
+            <div id="template-ijoagt" class="gjs-cell">
+                <div id="template-iahc0o" class="">Address Information</div>
+            </div>
+            <div id="template-i5imqj" class="gjs-cell">
+                <div id="template-i2fltz" class="gjs-row">
+                    <div id="template-ie4tjc" class="gjs-cell">
+                        <div id="template-iak2fh" class="gjs-row">
+                            <div id="template-incmik" class="gjs-cell">
+                                <div id="template-izb0cf" class="">Billing Street</div>
+                            </div>
+                            <div id="template-i8ymi1" class="gjs-cell">
+                                <textarea id="template-i7tnrf" class="textarea" ngDefaultControl [(ngModel)]="salesAccountUpdate.BillingStreet" [ngModelOptions]="{standalone: true}"></textarea>
+                            </div>
+                        </div>
+                        <div id="template-ivand1" class="gjs-row">
+                            <div id="template-ieke1q" class="gjs-cell">
+                                <div id="template-it31z5" class="">Billing City</div>
+                            </div>
+                            <div id="template-ihz26l" class="gjs-cell">
+                                <input id="template-ib4q8i" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.BillingCity" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-iv8884" class="gjs-row">
+                            <div id="template-iqhaol" class="gjs-cell">
+                                <div id="template-icy9l2" class="">Billing 
+                                    <div id="template-i5vf1s" class="">State/Province</div>
+                                </div>
+                            </div>
+                            <div id="template-i295it" class="gjs-cell">
+                                <input id="template-iihq4q" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.BillingState" [ngModelOptions]="{standalone: true}" />
+                            </div>
+                        </div>
+                        <div id="template-ij2c0a" class="gjs-row">
+                            <div id="template-iblaup" class="gjs-cell">
+                                <div id="template-i1cwsr" class="">
+                                    <div id="template-isbnii" class="">
+                                        <div id="template-ioyms6" class="">Billing</div> Zip/Postal Code</div>
+                                </div>
+                            </div>
+                            <div id="template-ibpdsj" class="gjs-cell">
+                                <input id="template-i2zwkl" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.BillingPostalCode" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-imw7ax" class="gjs-row">
+                            <div id="template-izqqej" class="gjs-cell">
+                                <div id="template-i5n6k6" class="">
+                                    <div id="template-intm05" class="">
+                                        <div id="template-ih52qm" class="">Billing</div> Country</div>
+                                </div>
+                            </div>
+                            <div id="template-ifmgke" class="gjs-cell">
+                                <input id="template-i4bjh2" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.BillingCountry" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="template-isjk23" class="gjs-cell">
+                        <div id="template-ifmtpz" class="gjs-row">
+                            <div id="template-i4c3kg" class="gjs-cell">
+                                <div id="template-ijtiun" class="">Shipping Street</div>
+                            </div>
+                            <div id="template-iqyx0f" class="gjs-cell">
+                                <textarea id="template-ie9iwm" class="textarea " ngDefaultControl [(ngModel)]="salesAccountUpdate.ShippingStreet" [ngModelOptions]="{standalone: true}"></textarea>
+                            </div>
+                        </div>
+                        <div id="template-i797mh" class="gjs-row">
+                            <div id="template-ixd494" class="gjs-cell">
+                                <div id="template-idchcb" class="">Shipping City</div>
+                            </div>
+                            <div id="template-il507n" class="gjs-cell">
+                                <input id="template-imlzly" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.ShippingCity" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-iyud2i" class="gjs-row">
+                            <div id="template-iasj4h" class="gjs-cell">
+                                <div id="template-i78a62" class="">Shipping State/Province</div>
+                            </div>
+                            <div id="template-i110x2" class="gjs-cell">
+                                <input id="template-iw3ujr" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.ShippingState" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-is3iq5" class="gjs-row">
+                            <div id="template-i2mt65" class="gjs-cell">
+                                <div id="template-iqo1jh" class="">Shipping Zip/Postal Code</div>
+                            </div>
+                            <div id="template-i9ji94" class="gjs-cell">
+                                <input id="template-i1aylg" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.ShippingPostalCode" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-iehhs6" class="gjs-row">
+                            <div id="template-ien5nl" class="gjs-cell">
+                                <div id="template-iuffkm" class="">Shipping Country</div>
+                            </div>
+                            <div id="template-iuwudg" class="gjs-cell">
+                                <input id="template-i0l9uh" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.ShippingCountry" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="template-icibfv" class="gjs-row">
+            <div id="template-i9s6xf" class="gjs-cell">
+                <div id="template-i1s4x5" class="">Additional Information</div>
+            </div>
+            <div id="template-iqgn7d" class="gjs-cell">
+                <div id="template-ir6cj5" class="gjs-row">
+                    <div id="template-ii146a" class="gjs-cell">
+                        <div id="template-ikajxc" class="gjs-row">
+                            <div id="template-iog5hr" class="gjs-cell">
+                                <div id="template-iaaoy8" class="">Customer Priority</div>
+                            </div>
+                            <div id="template-i6gayd" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" [(ngModel)]="salesAccountUpdate.CustomerPriority__c" [ngModelOptions]="{standalone: true}"  placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let cuspro of customerpriority" [ngValue]="cuspro" ngDefaultControl>{{cuspro}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="template-ihvs9t" class="gjs-row">
+                            <div id="template-i7ks1b" class="gjs-cell">
+                                <div id="template-iymx14" class="">SLA Expiration Date</div>
+                            </div>
+                            <div id="template-i0qdkt" class="gjs-cell">
+                                <input id="template-iwy9n5" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.SLAExpirationDate__c" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-i5d82a" class="gjs-row">
+                            <div id="template-i8opd8" class="gjs-cell">
+                                <div id="template-idh5y5" class="">Number of Locations</div>
+                            </div>
+                            <div id="template-ixe45c" class="gjs-cell">
+                                <input id="template-iai8qo" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.NumberofLocations__c" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-ie1e2t" class="gjs-row">
+                            <div id="template-i4a20w" class="gjs-cell">
+                                <div id="template-isya2l" class="">Active</div>
+                            </div>
+                            <div id="template-idq2pb" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" [(ngModel)]="salesAccountUpdate.Active__c" [ngModelOptions]="{standalone: true}" placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let act of active" [ngValue]="act" ngDefaultControl>{{act}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="template-iwdzee" class="gjs-cell">
+                        <div id="template-ijbs2c" class="gjs-row">
+                            <div id="template-i9ou6l" class="gjs-cell">
+                                <div id="template-ik4jay" class="">SLA</div>
+                            </div>
+                            <div id="template-ibxwxd" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" [(ngModel)]="salesAccountUpdate.SLA__c" [ngModelOptions]="{standalone: true}" placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let sl of sla" [ngValue]="sl"  ngDefaultControl>{{sl}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="template-i1qtjc" class="gjs-row">
+                            <div id="template-iq83i4" class="gjs-cell">
+                                <div id="template-i6ll6g" class="">SLA Serial Number</div>
+                            </div>
+                            <div id="template-iya6zt" class="gjs-cell">
+                                <input id="template-iw95ok" class="input form-control " ngDefaultControl [(ngModel)]="salesAccountUpdate.SLASerialNumber__c" [ngModelOptions]="{standalone: true}"/>
+                            </div>
+                        </div>
+                        <div id="template-ife7b3" class="gjs-row">
+                            <div id="template-iwsjvy" class="gjs-cell">
+                                <div id="template-io2kif" class="">Upsell Opportunity</div>
+                            </div>
+                            <div id="template-ipn9hk" class="gjs-cell">
+                                <select id="template-ix8w5p" class="select form-control" name="name" [(ngModel)]="salesAccountUpdate.UpsellOpportunity__c" [ngModelOptions]="{standalone: true}" placeholder="select to create with relationship data" >
+                                    <option value="" id="template-i3v8g9" class="">--None--</option>
+                                    <option id="template-ia3l8p" *ngFor="let opls of upsellopportunity" [ngValue]="opls"  ngDefaultControl>{{opls}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="template-iosus9" class="gjs-row">
+            <div id="template-ic1sw8" class="gjs-cell">
+                <div id="template-ia7bm7" class="">Description Information</div>
+            </div>
+            <div id="template-iu459q" class="gjs-cell">
+                <div id="template-idboxq" class="gjs-row">
+                    <div id="template-i2xc6j" class="gjs-cell">
+                        <div id="template-igibeg" class="gjs-row">
+                            <div id="template-ij5xxk" class="gjs-cell">
+                                <div id="template-ikz8ex" class="">Description</div>
+                            </div>
+                            <div id="template-izk8b9" class="gjs-cell">
+                                <textarea id="template-iumhha" class="textarea "  [(ngModel)]="salesAccountUpdate.Description" [ngModelOptions]="{standalone: true}"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="template-igx883" class="gjs-cell"></div>
+                </div>
+            </div>
+        </div>
+        <div id="template-i5zwik" class="gjs-row">
+            <div id="template-iowq7k" class="gjs-cell">
+                <div id="template-icypk2" class="button btn btn-primary " (click)="GpUpdate()" >Update</div>
+                <div id="template-ipquca" class="button btn btn-primary " (click)="GpDelete()">Delete</div>
+                <div id="template-idkrzq" class="button btn btn-primary " [routerLink]="['/searchsaleforce']">Cancel</div>
+            </div>
+            <div id="template-i3hdgj" class="gjs-cell"></div>
+        </div>
+    </div>
+</div>
+
